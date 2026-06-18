@@ -1,0 +1,16 @@
+<launch>
+    <node
+        pkg="speech_recognition"
+        type="vosk_text_publisher_gpu.py"
+        name="vosk_text_publisher"
+        output="screen">
+
+        <param name="topic" value="/voice/final_text_json" />
+        <param name="sample_rate" value="16000" />
+        <param name="block_size" value="8000" />
+
+        <!-- Empty means default microphone -->
+        <param name="device" value="" />
+
+    </node>
+</launch>

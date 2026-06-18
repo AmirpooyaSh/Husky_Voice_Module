@@ -1,0 +1,32 @@
+--extra-index-url https://download.pytorch.org/whl/cu102
+
+torch==1.12.1+cu102
+torchaudio==0.12.1
+
+numpy==1.24.4
+scipy==1.10.1
+matplotlib==3.7.5
+#Added For Docker
+PyQt5==5.15.10
+
+sounddevice==0.4.6
+
+transformers==4.46.3
+huggingface-hub==0.31.4
+safetensors==0.5.3
+sentencepiece==0.2.0
+speechbrain==1.0.3
+
+HyperPyYAML==1.2.2
+loralib==0.1.2
+requests==2.32.3
+tqdm==4.67.1
+PyYAML==6.0.2
+regex==2024.11.6
+tokenizers==0.20.3
+joblib==1.4.2
+ruamel.yaml==0.18.10
+ruamel.yaml.clib==0.2.8
+packaging==25.0
+typing_extensions==4.13.2
+
