@@ -1,0 +1,24 @@
+<launch>
+    <node pkg="speech_recognition"
+          type="whisper_mic_node.py"
+          name="whisper_mic_node"
+          output="screen">
+
+        <param name="whisper_url" value="http://127.0.0.1:9000/v1/audio/transcriptions" />
+
+        <!-- Use whatever your Whisper Docker expects -->
+        <param name="model" value="whisper-1" />
+        <param name="language" value="en" />
+
+        <!-- Shorter = lower latency, longer = more accurate -->
+        <param name="chunk_seconds" value="2.0" />
+
+        <param name="sample_rate" value="16000" />
+        <param name="channels" value="1" />
+
+        <!-- Use "default" first. If needed, replace with plughw:1,0 etc. -->
+        <param name="audio_device" value="plughw:2,0" />
+
+        <param name="timeout" value="30.0" />
+    </node>
+</launch>
