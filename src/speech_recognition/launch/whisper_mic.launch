@@ -17,7 +17,7 @@
         <param name="channels" value="1" />
 
         <!-- Use "default" first. If needed, replace with plughw:1,0 etc. -->
-        <param name="audio_device" value="plughw:2,0" />
+        <param name="audio_device" value="plughw:3,0" />
 
         <param name="timeout" value="30.0" />
     </node>

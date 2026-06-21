@@ -195,7 +195,6 @@ catkin_install_python(PROGRAMS
   scripts/vosk_text_publisher.py
   scripts/vosk_text_publisher_gpu.py
   scripts/llm_command_classifier.py
-  scripts/llm_gpt_oss_function_classifier.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
