@@ -1,18 +1,21 @@
 <launch>
-    <node
-        pkg="speech_recognition"
-        type="llm_command_classifier.py"
-        name="llm_command_classifier"
-        output="screen">
+    <node pkg="speech_recognition"
+          type="llm_command_classifier.py"
+          name="llm_command_classifier"
+          output="screen">
 
-        <param name="input_topic" value="/voice/final_text_json" />
-        <param name="output_topic" value="/llm_command_classification" />
+        <param name="input_topic" value="/voice/text" />
 
-        <!-- Ollama Docker should expose port 11434 to the host -->
-        <param name="ollama_url" value="http://127.0.0.1:11434/api/chat" />
+        <param name="command_topic" value="/voice/command" />
+        <param name="json_topic" value="/voice/command_json" />
 
-        <!-- Change this if you use qwen2.5:0.5b or qwen2.5:1.5b or llama3.2:1b or -->
-        <param name="model" value="qwen2.5:1.5b" />
+        <param name="ollama_base_url" value="http://127.0.0.1:11434/v1" />
+        <param name="model" value="llama3.1:8b" />
 
+        <param name="temperature" value="0.0" />
+        <param name="max_tokens" value="80" />
+        <param name="timeout" value="30.0" />
+
+        <param name="publish_unknown_on_error" value="true" />
     </node>
 </launch>
