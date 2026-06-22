@@ -1,0 +1,12 @@
+SKIPPED MODEL
+=============
+Model: phi3:3.8b
+Reason: exception
+
+Details:
+{
+  "reason": "exception",
+  "error": "ResponseError('registry.ollama.ai/library/phi3:3.8b does not support tools')",
+  "precheck_text": "stop",
+  "expected": "STOP"
+}

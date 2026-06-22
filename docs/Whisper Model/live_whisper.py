@@ -21,7 +21,8 @@ LANGUAGE = "en"
 # Your mic:
 # plughw:2,0 = motherboard mic
 # plughw:3,0 = Razer Kiyo Pro
-AUDIO_DEVICE = "plughw:2,0"
+# Lambda PC = plughw:1,0
+AUDIO_DEVICE = "plughw:1,0"
 
 SAMPLE_RATE = 16000
 CHANNELS = 1
@@ -112,6 +113,14 @@ def save_wav(frames_list):
 
 
 def transcribe(wav_path):
+    """
+    Send one saved utterance to the Whisper Docker server.
+
+    Returns:
+        text: Transcribed text.
+        api_elapsed: Total time spent waiting for the Docker Whisper API response.
+                     This includes HTTP transfer + model inference inside the container.
+    """
     with open(wav_path, "rb") as f:
         files = {
             "file": ("audio.wav", f, "audio/wav")
@@ -122,12 +131,14 @@ def transcribe(wav_path):
             "language": LANGUAGE
         }
 
+        api_start = time.time()
         response = requests.post(
             WHISPER_URL,
             files=files,
             data=data,
             timeout=60
         )
+        api_elapsed = time.time() - api_start
 
     if response.status_code != 200:
         raise RuntimeError(
@@ -138,7 +149,8 @@ def transcribe(wav_path):
         )
 
     result = response.json()
-    return result.get("text", "").strip()
+    text = result.get("text", "").strip()
+    return text, api_elapsed
 
 
 def main():
@@ -205,14 +217,32 @@ def main():
                 wav_path = save_wav(utterance_frames)
 
                 try:
-                    start = time.time()
-                    text = transcribe(wav_path)
-                    elapsed = time.time() - start
+                    text, whisper_api_time = transcribe(wav_path)
+
+                    # How long the spoken audio was.
+                    audio_duration = utterance_time
+
+                    # Real-time factor: < 1.0 means faster than real time.
+                    # Example: 0.25 means 4x faster than the audio length.
+                    real_time_factor = whisper_api_time / audio_duration if audio_duration > 0 else 0.0
 
                     if text:
-                        print("[{:.3f}s whisper] {}".format(elapsed, text))
+                        print(
+                            "[whisper docker time: {:.3f}s | audio: {:.2f}s | RTF: {:.2f}x] {}".format(
+                                whisper_api_time,
+                                audio_duration,
+                                real_time_factor,
+                                text
+                            )
+                        )
                     else:
-                        print("[{:.3f}s whisper] No text".format(elapsed))
+                        print(
+                            "[whisper docker time: {:.3f}s | audio: {:.2f}s | RTF: {:.2f}x] No text".format(
+                                whisper_api_time,
+                                audio_duration,
+                                real_time_factor
+                            )
+                        )
 
                 finally:
                     if os.path.exists(wav_path):

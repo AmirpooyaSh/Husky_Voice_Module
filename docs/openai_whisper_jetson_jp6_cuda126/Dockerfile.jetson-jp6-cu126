@@ -1,0 +1,44 @@
+# Jetson Orin Nano Super / JetPack 6.x / CUDA 12.6
+# Do NOT use nvidia/cuda:* desktop images on Jetson.
+# This image is ARM64/iGPU-compatible and already includes Jetson-compatible CUDA + PyTorch.
+# If 24.12-py3-igpu is unavailable on your Jetson/NGC account, try:
+#   nvcr.io/nvidia/pytorch:24.11-py3-igpu
+#   nvcr.io/nvidia/pytorch:24.09-py3-igpu
+FROM nvcr.io/nvidia/pytorch:24.12-py3-igpu
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    XDG_CACHE_HOME=/models \
+    WHISPER_MODEL=base.en \
+    WHISPER_DEVICE=cuda \
+    WHISPER_LANGUAGE=en \
+    WHISPER_FP16=true \
+    WHISPER_BEAM=1 \
+    REQUEST_MODEL_NAME=whisper-1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    git \
+    curl \
+    ca-certificates \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install --upgrade pip setuptools wheel
+
+# Do NOT install desktop torch/torchaudio wheels here.
+# The base image already contains Jetson-compatible GPU PyTorch.
+# Installing torch from download.pytorch.org/whl/cu126 may overwrite it with a bad build.
+RUN python3 -m pip install \
+    openai-whisper \
+    fastapi \
+    "uvicorn[standard]" \
+    python-multipart
+
+WORKDIR /app
+COPY openai_whisper_api_server.py /app/api_server.py
+
+EXPOSE 9000
+
+CMD ["python3", "-m", "uvicorn", "api_server:app", "--host", "0.0.0.0", "--port", "9000"]

@@ -1,0 +1,16 @@
+SKIPPED MODEL
+=============
+Model: deepseek-r1:7b
+Reason: no_tool_call
+
+Details:
+{
+  "reason": "no_tool_call",
+  "predicted": "NO_TOOL_CALL",
+  "expected": "STOP",
+  "confidence": "",
+  "response_time_sec": 4.6145694499991805,
+  "raw_arguments": "",
+  "raw_content": "",
+  "precheck_text": "stop"
+}

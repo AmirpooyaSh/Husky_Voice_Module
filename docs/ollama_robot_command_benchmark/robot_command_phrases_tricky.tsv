@@ -1,0 +1,401 @@
+label	text
+PROCEED	resume route
+STOP	keep stopped
+SLOW_DOWN	quarter speed
+SLOW_DOWN	less throttle
+PROCEED	start the task
+PROCEED	come forward
+SLOW_DOWN	go but slow
+SLOW_DOWN	drive carefully
+PROCEED	move to the point
+PROCEED	begin motion
+SLOW_DOWN	keep going but slow
+UNKNOWN	where are you
+STOP	do not come forward
+UNKNOWN	what do you see
+UNKNOWN	voice mode
+UNKNOWN	what is your name
+STOP	no driving
+PROCEED	resume now
+STOP	don't drive forward
+STOP	you should not move
+PROCEED	safe to move
+SLOW_DOWN	slow just a bit
+PROCEED	continue navigation
+STOP	stop your wheels
+STOP	do not move
+STOP	do not restart
+SLOW_DOWN	slow down only
+STOP	stop right there
+UNKNOWN	nice job
+UNKNOWN	maybe later
+PROCEED	go to the next point
+PROCEED	start navigation
+PROCEED	continue the task
+PROCEED	move now
+STOP	you must not continue
+STOP	do not go
+UNKNOWN	charging needed
+PROCEED	permission to move
+STOP	please stop moving
+PROCEED	all clear
+UNKNOWN	it is noisy
+PROCEED	restart movement
+PROCEED	approach
+UNKNOWN	the floor is wet
+STOP	hold there
+UNKNOWN	send the report
+PROCEED	path is clear
+STOP	don't roll
+UNKNOWN	scan the wall
+SLOW_DOWN	slow in this area
+SLOW_DOWN	move forward slowly
+STOP	do not resume yet
+UNKNOWN	lidar on
+STOP	stop getting closer
+PROCEED	roll forward
+SLOW_DOWN	slow in the zone
+PROCEED	advance now
+STOP	stop the platform
+UNKNOWN	I am walking
+UNKNOWN	find the cone
+STOP	end movement
+UNKNOWN	weather is hot
+STOP	stop and wait
+STOP	hold but do not drive
+SLOW_DOWN	reduce velocity
+STOP	don't proceed
+UNKNOWN	look over there
+SLOW_DOWN	enter slow mode
+SLOW_DOWN	low speed
+SLOW_DOWN	be careful
+PROCEED	continue route
+UNKNOWN	where is the ladder
+STOP	don't move
+STOP	pause until clear
+UNKNOWN	manual mode
+UNKNOWN	camera on
+PROCEED	pass through
+STOP	wait until I signal
+SLOW_DOWN	slow the vehicle
+STOP	stop the route
+SLOW_DOWN	stay slow
+SLOW_DOWN	creep forward
+UNKNOWN	system status
+PROCEED	drive forward
+PROCEED	keep moving
+STOP	stop the base
+SLOW_DOWN	reduce speed
+PROCEED	go
+STOP	don't advance
+PROCEED	move ahead
+PROCEED	you are clear
+PROCEED	approach now
+UNKNOWN	detect obstacle
+SLOW_DOWN	slow a little
+SLOW_DOWN	reduce throttle
+STOP	keep the robot stopped
+STOP	end motion
+UNKNOWN	disconnect wifi
+UNKNOWN	rotate left
+SLOW_DOWN	proceed slowly
+SLOW_DOWN	slow down
+SLOW_DOWN	move at half speed
+UNKNOWN	I am working
+PROCEED	move normally
+PROCEED	drive on
+SLOW_DOWN	continue but slower
+STOP	hold position
+PROCEED	route is clear
+SLOW_DOWN	drive with caution
+PROCEED	start moving
+PROCEED	normal speed
+UNKNOWN	connect wifi
+PROCEED	carry on
+PROCEED	go through
+SLOW_DOWN	lower pace
+STOP	do not roll
+STOP	stop moving
+PROCEED	resume forward
+UNKNOWN	turn left
+STOP	don't restart
+UNKNOWN	close the door
+STOP	freeze there
+UNKNOWN	I said stop yesterday
+PROCEED	permission granted
+SLOW_DOWN	less speed
+SLOW_DOWN	slow for safety
+SLOW_DOWN	slow but continue
+SLOW_DOWN	take it slow
+STOP	kill motion
+PROCEED	start route
+SLOW_DOWN	slow pace
+PROCEED	begin the task
+PROCEED	green light
+SLOW_DOWN	half speed
+UNKNOWN	find the worker
+UNKNOWN	the word stop
+SLOW_DOWN	keep it slow
+UNKNOWN	lidar off
+SLOW_DOWN	do not stop, just slow down
+UNKNOWN	wrong way
+UNKNOWN	start recording
+SLOW_DOWN	go slower
+SLOW_DOWN	move but slowly
+STOP	stop in place
+UNKNOWN	bring me water
+UNKNOWN	wake up
+SLOW_DOWN	drive slower
+PROCEED	proceed now
+STOP	stay where you are
+UNKNOWN	increase volume
+SLOW_DOWN	walking speed
+PROCEED	ok continue
+STOP	worker ahead stop
+SLOW_DOWN	move slower
+SLOW_DOWN	not full speed
+STOP	stop until clear
+PROCEED	you may go
+SLOW_DOWN	slow before entering
+SLOW_DOWN	slow before the cone
+UNKNOWN	hello
+PROCEED	clear to go
+PROCEED	proceed
+UNKNOWN	drop the box
+PROCEED	proceed normally
+STOP	stop unless I say go
+SLOW_DOWN	switch to slow mode
+SLOW_DOWN	go ahead slowly
+STOP	interrupt motion
+STOP	stay put
+UNKNOWN	bad robot
+SLOW_DOWN	keep moving slowly
+UNKNOWN	there is dust
+PROCEED	continue normally
+STOP	hard stop
+UNKNOWN	where is my tool
+PROCEED	okay continue
+SLOW_DOWN	lower the velocity
+PROCEED	keep driving
+SLOW_DOWN	slow near me
+PROCEED	proceed forward
+PROCEED	keep rolling
+STOP	stop navigation
+UNKNOWN	what time is it
+PROCEED	continue forward
+UNKNOWN	change mode
+STOP	do not proceed
+SLOW_DOWN	ease up
+SLOW_DOWN	reduce pace
+UNKNOWN	save the file
+PROCEED	area is clear
+UNKNOWN	show me the map
+SLOW_DOWN	continue slowly
+SLOW_DOWN	slow the robot
+UNKNOWN	shutdown computer
+SLOW_DOWN	cautious movement
+UNKNOWN	go to sleep
+UNKNOWN	camera off
+UNKNOWN	follow me
+UNKNOWN	open settings
+PROCEED	safe to go
+STOP	you should not proceed
+PROCEED	go normally
+PROCEED	resume the task
+PROCEED	clear to proceed
+STOP	don't resume yet
+STOP	no forward motion
+UNKNOWN	do not say stop
+SLOW_DOWN	move carefully
+SLOW_DOWN	slow slightly
+PROCEED	move forward
+PROCEED	okay go
+SLOW_DOWN	slow, don't stop
+PROCEED	drive ahead
+UNKNOWN	lower the arm
+STOP	brake now
+PROCEED	move
+SLOW_DOWN	approach slowly
+SLOW_DOWN	don't halt, slow down
+STOP	stop before the cone
+STOP	stop before me
+SLOW_DOWN	slow before the worker
+PROCEED	start the robot
+STOP	pause now
+STOP	stop until I say proceed
+PROCEED	resume motion
+PROCEED	you can go
+PROCEED	advance
+PROCEED	start driving
+STOP	keep still
+UNKNOWN	what is your battery
+STOP	halt now
+UNKNOWN	pick this up
+STOP	abort movement
+SLOW_DOWN	keep speed low
+STOP	stop
+UNKNOWN	I cannot hear you
+PROCEED	start motion
+UNKNOWN	open the door
+SLOW_DOWN	reduce speed only
+UNKNOWN	take a picture
+STOP	no movement
+PROCEED	safe to proceed
+STOP	stay stopped
+STOP	don't come closer
+STOP	not proceed
+SLOW_DOWN	remain slow
+PROCEED	continue inspection
+SLOW_DOWN	slow your wheels
+PROCEED	continue now
+STOP	halt the vehicle
+SLOW_DOWN	drive at half speed
+PROCEED	advance forward
+STOP	wait there
+PROCEED	enter now
+SLOW_DOWN	slow mode
+STOP	remain still
+PROCEED	start inspection
+PROCEED	proceed through
+STOP	stop now
+UNKNOWN	look at me
+STOP	cut movement
+PROCEED	begin moving
+UNKNOWN	stop recording
+UNKNOWN	we stopped earlier
+UNKNOWN	play sound
+UNKNOWN	rotate right
+STOP	please don't move
+STOP	freeze
+SLOW_DOWN	minimum speed
+PROCEED	clear to move
+SLOW_DOWN	no stop, slow down
+SLOW_DOWN	slow down, not stop
+STOP	do not continue
+UNKNOWN	mute speaker
+UNKNOWN	decrease volume
+STOP	lock position
+STOP	you must stop
+STOP	stop at this point
+STOP	stop before entering
+PROCEED	resume navigation
+PROCEED	head forward
+STOP	stop but keep listening
+UNKNOWN	slow music
+UNKNOWN	measure distance
+PROCEED	go now
+PROCEED	keep going
+SLOW_DOWN	slow approach
+PROCEED	ok proceed
+UNKNOWN	I need help
+SLOW_DOWN	go at low speed
+UNKNOWN	proceeding report
+UNKNOWN	visual mode
+STOP	freeze but keep sensors on
+PROCEED	come in
+PROCEED	please proceed
+PROCEED	resume inspection
+PROCEED	robot proceed
+UNKNOWN	how are you
+PROCEED	restart motion
+SLOW_DOWN	decrease speed
+STOP	don't continue
+SLOW_DOWN	gentle approach
+PROCEED	go ahead
+SLOW_DOWN	slow the platform
+UNKNOWN	the door is open
+SLOW_DOWN	slow your pace
+STOP	wait right there
+SLOW_DOWN	back off speed
+UNKNOWN	good job
+PROCEED	come through
+SLOW_DOWN	move with caution
+UNKNOWN	stop the recording only
+PROCEED	you can enter
+UNKNOWN	inspect the panel
+UNKNOWN	the word proceed
+PROCEED	ok go
+STOP	cancel navigation
+UNKNOWN	record video
+STOP	do not advance
+SLOW_DOWN	slow motion
+SLOW_DOWN	lower speed
+SLOW_DOWN	minimum velocity
+SLOW_DOWN	proceed but slowly
+STOP	abort the drive
+SLOW_DOWN	do not halt, slow down
+PROCEED	enter
+UNKNOWN	not that one
+UNKNOWN	battery low
+STOP	not continue
+UNKNOWN	say that again
+UNKNOWN	delete the file
+SLOW_DOWN	slow at the turn
+SLOW_DOWN	ease off
+STOP	stop at the marker
+STOP	don't go
+STOP	do not drive forward
+PROCEED	return to normal
+SLOW_DOWN	don't stop, slow down
+UNKNOWN	lift the tool
+UNKNOWN	turn right
+SLOW_DOWN	reduce to walking speed
+PROCEED	move through
+STOP	avoid moving
+SLOW_DOWN	keep moving but slow
+STOP	hold until clear
+PROCEED	okay proceed
+PROCEED	move in
+STOP	stop before the line
+SLOW_DOWN	slow movement
+UNKNOWN	turn off the light
+SLOW_DOWN	come forward slowly
+SLOW_DOWN	cautious drive
+STOP	person ahead stop
+SLOW_DOWN	not stop, slow
+UNKNOWN	watch the cable
+UNKNOWN	stop sign on the wall
+SLOW_DOWN	resume slowly
+SLOW_DOWN	not so fast
+STOP	cease motion
+UNKNOWN	tell me a joke
+SLOW_DOWN	advance slowly
+UNKNOWN	the door is closed
+UNKNOWN	restart computer
+STOP	cancel movement
+STOP	halt
+SLOW_DOWN	slow around me
+UNKNOWN	hey robot
+PROCEED	come ahead
+SLOW_DOWN	you are too fast
+PROCEED	continue
+UNKNOWN	repeat that
+UNKNOWN	reboot
+UNKNOWN	call the operator
+UNKNOWN	thank you
+SLOW_DOWN	slow it down
+PROCEED	resume movement
+STOP	pause motion
+UNKNOWN	turn on the light
+PROCEED	move to the marker
+SLOW_DOWN	crawl
+SLOW_DOWN	too fast
+STOP	stop for safety
+STOP	full stop
+STOP	emergency stop
+PROCEED	resume
+UNKNOWN	good morning
+STOP	stop approaching
+PROCEED	green signal
+UNKNOWN	do not say go
+UNKNOWN	autonomous mode
+STOP	not go forward
+UNKNOWN	bring the hammer
+STOP	pause but stay ready
+SLOW_DOWN	take it slower
+SLOW_DOWN	come slowly
+SLOW_DOWN	caution mode
+UNKNOWN	this is heavy
+STOP	stop the robot
+STOP	you need to stop
+UNKNOWN	come back later

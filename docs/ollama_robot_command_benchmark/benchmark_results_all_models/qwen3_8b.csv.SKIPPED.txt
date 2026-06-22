@@ -1,0 +1,18 @@
+SKIPPED MODEL
+=============
+Model: qwen3:8b
+Reason: invalid_label
+
+Details:
+{
+  "reason": "invalid_label",
+  "predicted": "INVALID",
+  "expected": "STOP",
+  "confidence": "",
+  "response_time_sec": 5.38379769599851,
+  "raw_arguments": {
+    "text": "stop"
+  },
+  "raw_content": "",
+  "precheck_text": "stop"
+}

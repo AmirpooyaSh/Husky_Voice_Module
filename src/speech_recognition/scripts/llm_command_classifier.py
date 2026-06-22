@@ -13,6 +13,8 @@ def normalize_command(command):
     if command is None:
         return "UNKNOWN"
 
+    print(command)
+
     command = str(command).strip().upper()
     command = command.replace(" ", "_")
     command = command.replace("-", "_")
@@ -125,12 +127,7 @@ class LLMCommandClassifierNode:
                     "You are a robot command classifier. "
                     "Classify the user's text into exactly one command: "
                     "STOP, SLOW_DOWN, PROCEED, or UNKNOWN. "
-                    "Use STOP for commands like stop, halt, freeze, stay where you are, don't move. "
-                    "Use SLOW_DOWN for commands like slow down, reduce speed, be careful, move slowly. "
-                    "Use PROCEED for commands like proceed, continue, move, go ahead, resume. "
-                    "Use UNKNOWN if the text is unrelated, unclear, empty, or not a robot movement command. "
                     "Always use the classify_robot_command tool. "
-                    "Do not answer in normal text."
                 )
             },
             {

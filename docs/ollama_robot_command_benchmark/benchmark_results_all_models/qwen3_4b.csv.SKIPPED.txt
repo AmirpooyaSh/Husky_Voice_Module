@@ -1,0 +1,16 @@
+SKIPPED MODEL
+=============
+Model: qwen3:4b
+Reason: no_tool_call
+
+Details:
+{
+  "reason": "no_tool_call",
+  "predicted": "NO_TOOL_CALL",
+  "expected": "STOP",
+  "confidence": "",
+  "response_time_sec": 3.999257961000694,
+  "raw_arguments": "",
+  "raw_content": "Okay, let's see. The user wrote \"stop\". I need to classify this into one of the commands: STOP, SLOW_DOWN, PROCEED, or UNKNOWN.\n\nFirst, the command is very short. The word \"stop\" is a direct instruction. In robot commands, \"stop\"",
+  "precheck_text": "stop"
+}

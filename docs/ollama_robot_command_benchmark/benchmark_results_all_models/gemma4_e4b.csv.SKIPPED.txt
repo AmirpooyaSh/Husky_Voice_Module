@@ -1,0 +1,12 @@
+SKIPPED MODEL
+=============
+Model: gemma4:e4b
+Reason: exception
+
+Details:
+{
+  "reason": "exception",
+  "error": "ResponseError('llama-server process has terminated: GGML_ASSERT(n_inputs < GGML_SCHED_MAX_SPLIT_INPUTS) failed: GGML_ASSERT(n_inputs < GGML_SCHED_MAX_SPLIT_INPUTS) failed')",
+  "precheck_text": "stop",
+  "expected": "STOP"
+}

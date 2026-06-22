@@ -1,0 +1,16 @@
+SKIPPED MODEL
+=============
+Model: qwen3:0.6b
+Reason: no_tool_call
+
+Details:
+{
+  "reason": "no_tool_call",
+  "predicted": "NO_TOOL_CALL",
+  "expected": "STOP",
+  "confidence": "",
+  "response_time_sec": 3.312058398998488,
+  "raw_arguments": "",
+  "raw_content": "{\"name\": \"classify_robot_command\", \"arguments\": {\"command\": \"STOP\"}}",
+  "precheck_text": "stop"
+}

@@ -40,18 +40,18 @@ class WhisperMicNode:
         self.sample_format = rospy.get_param("~sample_format", "S16_LE")
 
         # VAD parameters
-        self.frame_seconds = float(rospy.get_param("~frame_seconds", 0.25))
+        self.frame_seconds = float(rospy.get_param("~frame_seconds", 0.10))
 
         # Your requested value
-        self.rms_start_threshold = int(rospy.get_param("~rms_start_threshold", 1000))
+        self.rms_start_threshold = int(rospy.get_param("~rms_start_threshold", 2000))
 
         # Usually lower than start threshold so speech does not get cut off too early
         self.rms_continue_threshold = int(rospy.get_param("~rms_continue_threshold", 600))
 
-        self.end_silence_seconds = float(rospy.get_param("~end_silence_seconds", 0.8))
-        self.pre_roll_seconds = float(rospy.get_param("~pre_roll_seconds", 0.5))
-        self.min_utterance_seconds = float(rospy.get_param("~min_utterance_seconds", 0.5))
-        self.max_utterance_seconds = float(rospy.get_param("~max_utterance_seconds", 6.0))
+        self.end_silence_seconds = float(rospy.get_param("~end_silence_seconds", 0.35))
+        self.pre_roll_seconds = float(rospy.get_param("~pre_roll_seconds", 0.30))
+        self.min_utterance_seconds = float(rospy.get_param("~min_utterance_seconds", 0.25))
+        self.max_utterance_seconds = float(rospy.get_param("~max_utterance_seconds", 3.0))
 
         self.timeout = float(rospy.get_param("~timeout", 60.0))
 

@@ -5,14 +5,14 @@ import time
 from openai import OpenAI
 
 
-# Use the exact model name shown by: docker exec -it ollama ollama list
+# Use the exact model name shown by: docker exec -it ollama ollama list 
 # Good first test:
 MODEL = "llama3.1:8b"
 
 # You can later try:
 # MODEL = "gpt-oss:20b"
 # MODEL = "qwen2.5:1.5b"
-
+# MODEL = "qwen3:0.6b"
 
 client = OpenAI(
     base_url="http://localhost:11434/v1",
@@ -47,11 +47,11 @@ tools = [
                     "command": {
                         "type": "string",
                         "enum": ["STOP", "SLOW_DOWN", "PROCEED", "UNKNOWN"],
-                        "description": "The classified robot command."
+                        "description": "The classified robot command"
                     },
                     "confidence": {
                         "type": "number",
-                        "description": "Selection confidence from 0.0 to 1.0."
+                        "description": "How confidence your classification is from 0.0 to 1.0."
                     }
                 },
                 "required": ["command", "confidence"],

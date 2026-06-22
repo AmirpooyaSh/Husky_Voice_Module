@@ -1,0 +1,12 @@
+SKIPPED MODEL
+=============
+Model: gemma2:2b
+Reason: exception
+
+Details:
+{
+  "reason": "exception",
+  "error": "ResponseError('registry.ollama.ai/library/gemma2:2b does not support tools')",
+  "precheck_text": "stop",
+  "expected": "STOP"
+}
